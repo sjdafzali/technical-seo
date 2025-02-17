@@ -1,0 +1,618 @@
+<!---------- نمونه کد اسکیما ---------->
+<!-- breadcrumb schem  -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "صفحه اصلی",
+        "item": "https://example.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "دسته‌بندی",
+        "item": "https://example.com/category/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "زیردسته‌بندی",
+        "item": "https://example.com/category/subcategory/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "صفحه فعلی",
+        "item": "https://example.com/category/subcategory/current-page/"
+      }]
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Organization chema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "نام سازمان",
+      "legalName": "نام قانونی سازمان",
+      "url": "https://www.example.com",
+      "logo": "https://www.example.com/logo.png",
+      "foundingDate": "2000-01-01",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "نام بنیانگذار"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "خیابان اصلی، پلاک ۱۲۳",
+        "addressLocality": "تهران",
+        "postalCode": "1234567890",
+        "addressCountry": "ایران"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+98-21-12345678",
+        "contactType": "پشتیبانی",
+        "email": "info@example.com",
+        "availableLanguage": ["فارسی", "انگلیسی"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/example",
+        "https://twitter.com/example",
+        "https://www.linkedin.com/company/example"
+      ]
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Website Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "نام وب‌سایت",
+      "url": "https://www.example.com",
+      "description": "توضیحات مختصر درباره وب‌سایت",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.example.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "sameAs": [
+        "https://www.facebook.com/example",
+        "https://twitter.com/example",
+        "https://www.linkedin.com/company/example"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+98-21-12345678",
+        "contactType": "پشتیبانی",
+        "email": "info@example.com",
+        "availableLanguage": ["فارسی", "انگلیسی"]
+      }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- WebPage Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebPage",
+      "name": "عنوان صفحه",
+      "url": "https://www.example.com/page-url",
+      "description": "توضیحات مختصر درباره محتوای این صفحه",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com/page-url"
+      },
+      "image": "https://www.example.com/image.jpg",
+      "datePublished": "2023-10-01",
+      "dateModified": "2023-10-05",
+      "author": {
+        "@type": "Person",
+        "name": "نام نویسنده"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "نام سازمان",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/logo.png"
+        }
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "صفحه اصلی",
+            "item": "https://www.example.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "دسته‌بندی",
+            "item": "https://www.example.com/category"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "عنوان صفحه فعلی",
+            "item": "https://www.example.com/page-url"
+          }
+        ]
+      }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- CreativeWorkSeries Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "CreativeWorkSeries",
+  "name": "نام سری",
+  "description": "توضیحات مختصر درباره این سری",
+  "url": "https://www.example.com/series-url",
+  "image": "https://www.example.com/series-image.jpg",
+  "startDate": "2020-01-01",
+  "endDate": "2023-10-01",
+  "numberOfSeasons": 3,
+  "numberOfEpisodes": 30,
+  "publisher": {
+    "@type": "Organization",
+    "name": "نام ناشر",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.example.com/logo.png"
+    }
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "نام خالق سری"
+  },
+  "genre": ["درام", "اکشن", "ماجراجویی"],
+  "sameAs": [
+    "https://www.imdb.com/title/tt1234567/",
+    "https://www.facebook.com/example-series",
+    "https://twitter.com/example-series"
+  ]
+}
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Article Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Article",
+      "headline": "عنوان مقاله",
+      "description": "توضیحات مختصر درباره مقاله",
+      "image": "https://www.example.com/article-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "نام نویسنده",
+        "url": "https://www.example.com/author-profile"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "نام سازمان",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/logo.png"
+        }
+      },
+      "datePublished": "2023-10-01",
+      "dateModified": "2023-10-05",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com/article-url"
+      },
+      "articleBody": "متن کامل مقاله در اینجا قرار می‌گیرد."
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- BlogPosting Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "BlogPosting",
+      "headline": "عنوان پست وبلاگ",
+      "description": "توضیحات مختصر درباره پست وبلاگ",
+      "image": "https://www.example.com/blogpost-image.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "نام نویسنده",
+        "url": "https://www.example.com/author-profile"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "نام سازمان",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/logo.png"
+        }
+      },
+      "datePublished": "2023-10-01",
+      "dateModified": "2023-10-05",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com/blogpost-url"
+      },
+      "articleBody": "متن کامل پست وبلاگ در اینجا قرار می‌گیرد."
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- ContactPage Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "ContactPage",
+      "name": "صفحه تماس با ما",
+      "url": "https://www.example.com/contact",
+      "description": "صفحه تماس با ما برای پرسش‌ها، پیشنهادات و انتقادات",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com/contact"
+      },
+      "image": "https://www.example.com/contact-image.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+98-21-12345678",
+        "contactType": "پشتیبانی",
+        "email": "info@example.com",
+        "availableLanguage": ["فارسی", "انگلیسی"],
+        "areaServed": "ایران",
+        "contactOption": "TollFree"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "نام سازمان",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.example.com/logo.png"
+        }
+      }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "سوال اول چیست؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "پاسخ به سوال اول در اینجا قرار می‌گیرد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "سوال دوم چیست؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "پاسخ به سوال دوم در اینجا قرار می‌گیرد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "سوال سوم چیست؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "پاسخ به سوال سوم در اینجا قرار می‌گیرد."
+          }
+        }
+      ]
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Product schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "نام محصول",
+      "image": "https://www.example.com/product-image.jpg",
+      "description": "توضیحات مختصر درباره محصول",
+      "brand": {
+        "@type": "Brand",
+        "name": "نام برند"
+      },
+      "sku": "123456789",
+      "mpn": "987654321",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.example.com/product-url",
+        "priceCurrency": "IRR",
+        "price": "1000000",
+        "priceValidUntil": "2023-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "نام فروشنده"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "120"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "نام کاربر"
+          },
+          "datePublished": "2023-10-01",
+          "reviewBody": "این محصول عالی است!",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "نام کاربر دیگر"
+          },
+          "datePublished": "2023-09-25",
+          "reviewBody": "کیفیت خوبی دارد، اما قیمت کمی بالاست.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "5"
+          }
+        }
+      ]
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "نام کسب‌وکار",
+      "image": "https://www.example.com/business-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "خیابان اصلی، پلاک ۱۲۳",
+        "addressLocality": "تهران",
+        "postalCode": "1234567890",
+        "addressCountry": "ایران"
+      },
+      "telephone": "+98-21-12345678",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$"
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Event schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "نام رویداد",
+      "startDate": "2023-12-25T19:00",
+      "endDate": "2023-12-25T23:00",
+      "location": {
+        "@type": "Place",
+        "name": "نام محل برگزاری",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "خیابان اصلی، پلاک ۱۲۳",
+          "addressLocality": "تهران",
+          "postalCode": "1234567890",
+          "addressCountry": "ایران"
+        }
+      },
+      "description": "توضیحات مختصر درباره رویداد",
+      "image": "https://www.example.com/event-image.jpg",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.example.com/event-tickets",
+        "price": "500000",
+        "priceCurrency": "IRR",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Recipe schema  -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
+        "name": "نام دستور غذا",
+        "description": "توضیحات مختصر درباره دستور غذا",
+        "image": "https://www.example.com/recipe-image.jpg",
+        "author": {
+        "@type": "Person",
+        "name": "نام نویسنده"
+        },
+        "prepTime": "PT20M",
+        "cookTime": "PT30M",
+        "totalTime": "PT50M",
+        "recipeYield": "4 نفر",
+        "recipeIngredient": [
+        "مواد اولیه ۱",
+        "مواد اولیه ۲",
+        "مواد اولیه ۳"
+        ],
+        "recipeInstructions": [
+        "مرحله اول: ...",
+        "مرحله دوم: ...",
+        "مرحله سوم: ..."
+        ],
+        "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "35"
+        }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- VideoObject Schema  -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        "name": "عنوان ویدیو",
+        "description": "توضیحات مختصر درباره ویدیو",
+        "thumbnailUrl": "https://www.example.com/thumbnail.jpg",
+        "uploadDate": "2023-10-01T12:00:00Z",
+        "duration": "PT5M30S",
+        "contentUrl": "https://www.example.com/video.mp4",
+        "embedUrl": "https://www.example.com/embed/12345",
+        "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/WatchAction",
+        "userInteractionCount": "12345"
+        }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- JobPosting Schema  -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "عنوان شغل",
+        "description": "توضیحات مختصر درباره شغل",
+        "datePosted": "2023-10-01",
+        "validThrough": "2023-11-01",
+        "employmentType": "تمام‌وقت",
+        "hiringOrganization": {
+        "@type": "Organization",
+        "name": "نام سازمان",
+        "logo": "https://www.example.com/logo.png"
+        },
+        "jobLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "خیابان اصلی، پلاک ۱۲۳",
+            "addressLocality": "تهران",
+            "postalCode": "1234567890",
+            "addressCountry": "ایران"
+        }
+        },
+        "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "IRR",
+        "value": {
+            "@type": "QuantitativeValue",
+            "value": "30000000",
+            "unitText": "MONTH"
+        }
+        }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Course Schema  -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Course",
+        "name": "نام دوره",
+        "description": "توضیحات مختصر درباره دوره",
+        "provider": {
+        "@type": "Organization",
+        "name": "نام ارائه‌دهنده",
+        "sameAs": "https://www.example.com"
+        },
+        "courseCode": "D123",
+        "coursePrerequisites": "پیش‌نیازهای دوره",
+        "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "startDate": "2023-11-01",
+        "endDate": "2023-12-01",
+        "location": {
+            "@type": "Place",
+            "name": "نام محل برگزاری",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "خیابان اصلی، پلاک ۱۲۳",
+            "addressLocality": "تهران",
+            "postalCode": "1234567890",
+            "addressCountry": "ایران"
+            }
+        }
+        }
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Person schema -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "نام فرد",
+        "jobTitle": "عنوان شغلی",
+        "image": "https://www.example.com/person-image.jpg",
+        "url": "https://www.example.com/person-profile",
+        "sameAs": [
+        "https://www.facebook.com/example",
+        "https://twitter.com/example"
+        ]
+    }
+</script>
+
+<!---------- نمونه کد اسکیما ---------->
+<!-- Review schema  -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Review",
+        "itemReviewed": {
+        "@type": "Product",
+        "name": "نام محصول"
+        },
+        "author": {
+        "@type": "Person",
+        "name": "نام کاربر"
+        },
+        "datePublished": "2023-10-01",
+        "reviewBody": "این محصول عالی است!",
+        "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+        }
+    }
+</script>
